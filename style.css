@@ -1,0 +1,344 @@
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  text-align: center;
+  margin: 0;
+}
+
+.container {
+  width: 85%;
+  margin: 0 auto;
+}
+
+h1 {
+  padding: 0;
+  margin: 0;
+}
+
+p {
+  color: #333;
+}
+
+ul {
+  display: flex;
+  flex-direction: column;
+}
+
+li {
+  text-decoration: none;
+  list-style: none;
+  padding-bottom: 0.4rem;
+  margin-left: -2.5rem;
+}
+a {
+  text-decoration: none;
+  color: #222;
+}
+
+/* Header */
+.mainHeader {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 100vh;
+}
+
+.btn {
+  font-weight: bold;
+  font-size: 1rem;
+  background-color: #ffd600;
+  border: none;
+  border-radius: 1.5rem;
+  padding: 0.6rem 1rem;
+}
+
+.navLinks {
+  font-weight: 600;
+}
+
+.mainInfo button {
+  margin: 2rem 0;
+}
+
+#aboutUs h3,
+.moreInfo h3,
+.contactInfo h3 {
+  margin: 3rem 0 0;
+}
+
+#services h3 {
+  font-size: 1.3rem;
+  margin: 3rem 0 1.5rem;
+}
+#services h4 {
+  font-size: 1.1rem;
+  font-weight: 700;
+}
+
+#aboutUs img {
+  display: none;
+}
+
+.boxes {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+
+.box {
+  width: 90%;
+  height: fit-content;
+  border-radius: 1rem;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+  margin-bottom: 0.3rem;
+  padding-bottom: 2rem;
+}
+
+.box p {
+  width: 80%;
+  margin: 0 auto;
+  padding: 1.5rem;
+}
+
+.box a {
+  font-weight: bold;
+}
+
+.demoInfo span {
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+.demoImage {
+  margin: 3rem 0 2.5rem;
+}
+
+.highlight {
+  font-weight: 700;
+}
+.downloadBtns {
+  display: flex;
+  flex-direction: column;
+  margin: 2rem 0;
+  gap: 0.8rem;
+}
+
+footer {
+  background-color: #ffda69;
+  padding: 1rem 0;
+  margin-top: 3rem;
+}
+footer h4 {
+  color: #4f411b;
+  font-size: 1.2rem;
+  margin-top: 2.5rem;
+}
+
+#copyright {
+  color: #6e550f;
+  margin: 0;
+  padding: 2rem;
+}
+
+@media screen and (min-width: 925px) {
+  body {
+    text-align: unset;
+  }
+  ul {
+    flex-direction: row;
+  }
+  li {
+    margin-left: 2rem;
+  }
+  p {
+    line-height: 1.5rem;
+  }
+  .mainHeader {
+    flex-direction: row;
+    height: fit-content;
+    padding: 1.2rem 0;
+  }
+  .navLinks {
+    margin-left: 9rem;
+  }
+
+  .toggleBtn {
+    padding-left: 2rem;
+  }
+
+  /* Header */
+  header .container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .companyName {
+    font-size: 1.2rem;
+    font-weight: 700;
+    padding-top: 0.7rem;
+  }
+  .orderBtn,
+  .contactBtn {
+    font-weight: 600;
+    margin: auto 0;
+    height: fit-content;
+  }
+
+  /* Main Section */
+  main .container {
+    display: flex;
+    height: 80vh;
+    padding: 4em 0 0;
+  }
+  .mainImg {
+    width: 60vw;
+  }
+  .mainImg img {
+    width: 100%;
+  }
+  .mainInfo h2 {
+    font-size: 3em;
+    font-weight: bolder;
+  }
+  .mainInfo p {
+    width: 50ch;
+    margin-bottom: 2.5em;
+  }
+
+  /* Article */
+
+  #aboutUs,
+  .AboutUs {
+    display: flex;
+    margin-bottom: 3em;
+  }
+
+  .articleInfo {
+    padding-top: 3.5rem;
+    height: 60vh;
+  }
+
+  .articleInfo h3 {
+    font-size: 2em;
+    font-weight: 500;
+  }
+  .articleInfo p {
+    width: 45ch;
+  }
+  .articleImage {
+    width: 60vw;
+  }
+  .articleImage img {
+    padding-left: 3em;
+    width: 80%;
+  }
+
+  #aboutUs img {
+    display: inline-block;
+  }
+
+  /* Services */
+  #services h3 {
+    font-size: 2em;
+    font-weight: 600;
+    width: 25vw;
+    text-align: center;
+    margin: 0 auto 3rem;
+  }
+  .boxes {
+    flex-direction: row;
+    gap: 5rem;
+    margin-bottom: 3em;
+  }
+  .box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  .box h4 {
+    font-size: 1.4rem;
+    font-weight: 500;
+  }
+  .demoImage {
+    width: 60vw;
+  }
+  .demoImage img {
+    padding-left: 3em;
+    width: 80%;
+  }
+
+  .demoInfo {
+    padding-top: 5rem;
+  }
+
+  .demoInfo p {
+    width: 50ch;
+  }
+
+  .demoInfo span {
+    font-size: 1.8em;
+    font-weight: 500;
+  }
+
+  .deliveryDemo {
+    display: flex;
+    margin-bottom: 4rem;
+  }
+
+  .downloadBtns {
+    flex-direction: row;
+    gap: 2rem;
+  }
+
+  /* Contact Us */
+  #contactUs .container {
+    display: flex;
+    margin-bottom: 3rem;
+  }
+  .contactInfo {
+    width: 45vw;
+  }
+  .contactInfo p {
+    width: 50ch;
+  }
+  .contact {
+    width: 25vw;
+    padding-top: 2.5rem;
+  }
+  .contactInfo h3 {
+    font-size: 2rem;
+    font-weight: 600;
+    width: 25vw;
+  }
+
+  /* Footer */
+  footer .container {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 5rem;
+  }
+  .companyInfo {
+    width: 15vw;
+  }
+  .footerServices,
+  .companyAbout,
+  .community,
+  .socialMedia {
+    width: 11vw;
+  }
+
+  .socialMedia {
+    margin-top: 1.5rem;
+  }
+  .socialMedia i {
+    padding-right: 0.5rem;
+  }
+  #copyright {
+    text-align: center;
+    margin: 0 auto;
+    padding: 0 0 1.5rem;
+  }
+}
